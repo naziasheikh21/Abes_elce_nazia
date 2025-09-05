@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shamashdin Halal Meat Shop</title>
+  <meta name="description" content="Shamashdin Halal Meat Shop — Billawar best chicken & mutton. Halal meat milta hai.">
+  <style>
+    :root{ --accent:#b72816; --accent-dark:#8f1f12; --bg:#fff8f6; --card:#fff; --muted:#555 }
+    *{box-sizing:border-box}
+    body{font-family:Segoe UI, Roboto, "Noto Sans", Arial, sans-serif;margin:0;background:var(--bg);color:#222;line-height:1.5}
+    header{background:linear-gradient(90deg, rgba(183,40,22,0.95), rgba(143,31,18,0.9));color:#fff;padding:22px 16px}
+    .container{max-width:1000px;margin:0 auto;padding:20px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:64px;height:64px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--accent-dark);font-weight:700}
+    nav{margin-left:auto}
+    nav a{color:#fff;text-decoration:none;margin-left:12px;font-weight:600}
+    .hero{display:flex;gap:24px;align-items:center;padding:28px 0}
+    .hero .text{flex:1}
+    .hero h1{margin:0;font-size:28px}
+    .hero p{margin:8px 0 0}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:12px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media(max-width:880px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.hero{flex-direction:column}.grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+    h2{margin:0 0 6px;font-size:20px}
+
+    /* Menu styles */
+    .menu-list{list-style:none;padding:0;margin:0}
+    .menu-item{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed #eee}
+    .menu-item:last-child{border-bottom:none}
+    .price{font-weight:700;color:var(--accent-dark)}
+
+    /* About */
+    .about p{margin:8px 0}
+
+    footer{padding:18px 0;text-align:center;color:var(--muted);font-size:14px}
+
+    /* small helper */
+    .tag{display:inline-block;background:#fff2f0;color:var(--accent-dark);padding:6px 10px;border-radius:999px;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <div class="logo">SH</div>
+        <div>
+          <div style="font-weight:800;font-size:18px">Shamashdin Halal Meat Shop</div>
+          <div style="font-size:13px;opacity:.9">Billawar — Best Chicken &amp; Mutton (Halal)</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="text">
+        <h1>Khush aamdeed — Shamashdin Halal Meat Shop</h1>
+        <p>Yahan par <strong>halal meat</strong> milta hai. Billawar ki best chicken &amp; mutton shop — taaza, safe aur swaadisht.</p>
+        <a class="btn" href="#menu">Menu dekhein</a>
+      </div>
+      <div style="width:320px">
+        <div class="card" style="text-align:center;padding:18px">
+          <div style="font-size:14px;margin-bottom:8px">Special Tag</div>
+          <div class="tag">Halal Certified</div>
+          <p style="margin-top:12px;font-size:13px">Taaza products — trusted suppliers — friendly service.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card about" style="margin-bottom:16px">
+      <div class="section-title">
+        <h2>About Us</h2>
+      </div>
+      <p><strong>Shamashdin Halal Meat Shop</strong> ek parivarik dukan hai jahan aapko <strong>halal meat</strong> milta hai. Billawar ki best chicken aur mutton shop — hum quality, safai aur customer satisfaction ko importance dete hain. Aapko yahan se taaza chicken, mutton, fry-ready pieces aur chicken recipes ke liye high-quality cuts milenge.</p>
+      <p><em>"Yaha pr halal meat milta h aur billawar best chicken mutton shop"</em></p>
+    </section>
+
+    <section id="menu" style="margin-bottom:16px">
+      <div class="section-title">
+        <h2>Menu</h2>
+        <div style="font-size:13px;color:var(--muted)">Taaza | Halal</div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Chicken</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><span>Whole Chicken (1 kg)</span><span class="price">₹220/kg</span></li>
+            <li class="menu-item"><span>Chicken Breast</span><span class="price">₹260/kg</span></li>
+            <li class="menu-item"><span>Fry Chicken Pieces</span><span class="price">₹240/kg</span></li>
+            <li class="menu-item"><span>Boneless Chicken</span><span class="price">₹320/kg</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Mutton</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><span>Whole Mutton (1 kg)</span><span class="price">₹540/kg</span></li>
+            <li class="menu-item"><span>Mutton Boneless</span><span class="price">₹620/kg</span></li>
+            <li class="menu-item"><span>Mutton Keema</span><span class="price">₹480/kg</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Fry Chicken &amp; Recipes</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><span>Classic Fry Chicken</span><span class="price">₹180/plate</span></li>
+            <li class="menu-item"><span>Spicy Masala Chicken</span><span class="price">₹190/plate</span></li>
+            <li class="menu-item"><span>Special Chicken Biryani (Small)</span><span class="price">₹220</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="recipes" class="card" style="margin-bottom:16px">
+      <div class="section-title">
+        <h2>Chicken Recipes (Popular)</h2>
+        <div style="font-size:13px;color:var(--muted)">Ideas aap ghar par try kar sakte hain</div>
+      </div>
+      <ol>
+        <li><strong>Classic Tandoori Chicken</strong> — marinate with dahi, tandoori masala, lemon, and grill or bake.</li>
+        <li><strong>Fry Chicken</strong> — batter bana kar deep fry; serve with chutney.</li>
+        <li><strong>Chicken Curry</strong> — pyaz, tamatar, masale aur slow-cook for rich gravy.</li>
+        <li><strong>Chicken Biryani</strong> — layered rice with aromatic spices and slow-cooked chicken.</li>
+      </ol>
+    </section>
+
+    <section id="contact" class="card" style="margin-bottom:24px">
+      <div class="section-title"><h2>Contact &amp; Location</h2></div>
+      <p><strong>Address:</strong> Shamashdin Halal Meat Shop, Main Market, gurah kalyal.</p>
+      <p><strong>Timing:</strong> 8:00 AM — 10:00 PM</p>
+
+      <form onsubmit="event.preventDefault(); alert('Thanks! Order request received (demo).');" style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px">
+        <input type="text" name="name" placeholder="Your name" required style="flex:1;padding:10px;border-radius:8px;border:1px solid #eee">
+        <input type="tel" name="phone" placeholder="Phone" required style="flex:1;padding:10px;border-radius:8px;border:1px solid #eee">
+        <textarea name="note" placeholder="Order / message" style="width:100%;padding:10px;border-radius:8px;border:1px solid #eee" rows="3"></textarea>
+        <button class="btn" style="border:none">Send Order</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">&copy; <strong>Shamashdin Halal Meat Shop</strong> — All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
